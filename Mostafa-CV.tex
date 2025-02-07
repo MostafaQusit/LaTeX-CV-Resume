@@ -1,0 +1,462 @@
+%------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{cooltooltips}% http://ctan.org/pkg/cooltooltips
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{kpfonts}  % \fontfamily{kpfonts} by default
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4.08003pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\blueLink}[2]{
+  \href{#1}{\color{blue}\textbf{\underline{#2}}}
+}
+
+\newcommand{\textHover}[2]{
+  \cooltooltip[1 1 1]{}{}{}{#2}{#1}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://mostafa-qusit.com/}{\Large Mostafa Qusit}} & Email : \href{mailto:mostafahmedqusit@gmail.com}{mostafahmedqusit@gmail.com}\\
+%   \href{http://mostafa-qusit.com/}{http://www.mostafa-qusit.com} & Mobile : +2-01151173660 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Mostafa Ahmed Mahmoud Mohamed Qusit} \\ \vspace{1pt}
+    \small
+    \begin{spacing}{1.25}
+      \textbf{01151173660} $|$
+      \blueLink{mailto:mostafahmedqusit@gmail.com}{mostafahmedqusit@gmail.com} $|$
+      \blueLink{https://linkedin.com/in/mostafa-qusit}{linkedin.com/in/mostafa-qusit} $|$
+      \blueLink{https://github.com/MostafaQusit}{github.com/MostafaQusit}
+    \end{spacing}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Faculty of Engineering - Ain Shams University}{Abdo Pasha, Cairo}
+      {Bachelor of Science (BSc) in Mechanical Engineering – Mechatronics Engineering Program}{Sep. 2018 -- July 2023}
+      \resumeItemListStart
+        \resumeItem{GPA: 3.43 (9th on my class)}
+        \resumeItem{Graduation Project GPA: 4.0 (A+)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {B1 Aircraft Maintenance Scheduling Engineer}{May 2024 -- Present}
+      {EGYPTAIR MAINTENANCE AND ENGINEERING - CAMO - Scheduling Dep.}{Cairo International Airport, Cairo}
+      \resumeItemListStart
+      \resumeItem{\textbf{Bill of Work (BOW):}\\
+      - Prepared and managed comprehensive BOWs to ensure aircraft airworthiness and compliance with the Aircraft Maintenance Program (MP), service bulletins, and modifications.\\
+      - Scheduled MP tasks in alignment with compliance deadlines, flight hours (FH), and flight cycles (FC).}
+     
+      \resumeItem{\textbf{Engineering Orders (EO):}\\
+      - Received, evaluated, and scheduled EOs based on compliance deadlines, FH, and FC. \\
+      - Ensured resources, materials, and man-hours were allocated effectively for EO execution.}
+     
+      \resumeItem{\textbf{Time-Controlled Items (TCI):}\\
+      - Reviewed TCI lists to identify compliance due dates and scheduled tasks accordingly. \\
+      - Monitored TCI progress and resolved delays to ensure timely completion.}
+     
+      \resumeItem{\textbf{Deferred Defects:}\\
+      - Reviewed, prioritized, and scheduled deferred defects for resolution based on resources and compliance deadlines. \\
+      - Coordinated with relevant departments to facilitate closure and follow-up.}
+     
+      \resumeItem{\textbf{Open Items:}\\
+      - Scheduled and tracked tasks from Open Items Lists to meet compliance requirements. \\
+      - Ensured timely resolution of all open items and prevented delays.}
+      \resumeItemListEnd
+      
+    % -----------Multiple Positions Heading-----------
+    %    \resumeSubSubheading
+    %     {Software Engineer I}{Oct 2014 - Sep 2016}
+    %     \resumeItemListStart
+    %        \resumeItem{Apache Beam}
+    %          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+    %     \resumeItemListEnd
+    %    \resumeSubHeadingListEnd
+    %-------------------------------------------
+
+    \resumeSubheading
+      {IT Programming Instructor}{Sep. 2023 -- May 2024}
+      {NASS Academy - WE School of Applied Technology - 1st Secondary Grade}{Nasr City, Cairo}
+      \resumeItemListStart
+        \resumeItem{Delivered engaging and interactive 4 main topics in \textbf{IT-related subjects:}
+          \emph{(\textHover{Computer Architecture}{introduction to computer and computer component.},
+          \textHover{Computer Networks}{network types, topologies and devices, OSI Model, IPv4, etc.. (Basics CCNA).}, 
+          \textHover{Intro. to computer programming and Python}{programming concepts, mBlock, and Python Basics.},
+          \textHover{IT Systems in Organization}{IT infrastructure, data and information, IT threats, ethics and policies.})}}
+        \resumeItem{Integrated technology tools into teaching, including smart boards and Google Classroom, to enhance the learning experience.}
+        \resumeItem{Fostered practical skills through hands-on activities and real-world projects.}
+        \resumeItem{Assessed student performance using diverse evaluation methods, including quizzes, exams, and reports for international accreditation.}
+        \resumeItem{Contributed to curriculum development by creating quizzes, question banks, and participating in grading process.}
+        \resumeItem{Collaborated with colleagues to share best practices, refine teaching methods, and improve overall instruction quality.}
+        \resumeItem{Enhanced teaching and presentation skills by adapting to dynamic classroom needs and implementing innovative approaches.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Embedded Software Engineer}{Aug. 2022 -- Sep. 2022}
+      {MASAR ELECTRIC - Embedded Systems Department}{Abdeen, Cairo}
+      \resumeItemListStart
+      \resumeItem{Developed and contributed to multiple embedded and automation projects, including:\\
+      - Cooler Unit Project and Concrete Project, delivering efficient and reliable solutions.}
+     
+      \resumeItem{Implemented and integrated Human-Machine Interface (HMI) systems using DWIN DGUS II Touch Screen: \\
+      - Designed and developed both front-end and back-end functionalities to enable seamless communication with microcontrollers.}
+     
+      \resumeItem{Engineered approximately 15 AVR embedded drivers across various layers:\\
+      - MCAL Layer: Developed drivers for DIO, ADC, PWM, SPI, I2C, and other hardware abstractions. \\
+      - HCL Layer: Created drivers for higher-level modules, including Keypad, LCD, and SD-Card integration.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Maintenance Engineer (Intern)}{Aug. 2021 -- Sep. 2021}
+      {Royal Company for Ceramics Industry - Electrical Maintenance in sorting and packaging Dep.}{El Obour City, Cairo}
+      \resumeItemListStart
+        \resumeItem{followed up the production line in detail, especially the sorting and packing part.}
+        \resumeItem{Benefited and learned during maintenance operations, and understand potential and common faults, whether electrical, mechanical repairs, etc...}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/MostafaQusit/Simple-Online-Store}{Simple Online Store}} $|$ \emph{GitHub, VS Code, HTML, CSS, JavaScript, React}}{Sep 2023 -- Oct 2023}
+        \resumeItemListStart
+          \resumeItem{Designed and developed a simple online store using Front-End Framework called \textbf{React} (JavaScript-based).}
+          \resumeItem{Implemented features like product listing, product details.}
+          \resumeItem{Utilized React Hooks for state management and API calls.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/MostafaQusit/MAHR-GraduationProject}{M.A.H.R}} $|$ \emph{PlatfromIO IDE, ESP, ESP-NOW, IOT, Wi-Fi, Arduino, Python}}{Oct 2022 -- July 2023}
+        \resumeItemListStart
+          \resumeItem{A \textbf{M}ulti-function \textbf{A}utonomous \textbf{H}ousehold \textbf{R}obot, capable of navigating through the house on its own.}
+          \resumeItem{\textbf{Autonomous Navigation:}\\
+          - The robot is designed to navigate autonomously through the house, ensuring efficient movement and obstacle avoidance.\\
+          - Motion Analysis: Implemented using MATLAB and Simulink to ensure stability during planar motion, enabling the robot to maintain balance while overcoming small obstacles.}
+          
+          \resumeItem{\textbf{Mechanical Design:}\\
+          - Developed an optimized multi-material mechanical model using SOLIDWORKS to create a lightweight, yet rigid chassis (weighing 35 kg).}
+          
+          \resumeItem{\textbf{Manipulation System:}\\
+          - Equipped with a 5 Degrees of Freedom (DOF) manipulator arm featuring: (Belt transmission mechanisms, Gear ratios, Differential wrist joint, Semi-soft gripper that adapts to the geometry of objects being grabbed)}
+          
+          \resumeItem{\textbf{Communication Capabilities:}\\
+          - Integrated 4 communication methods, including: (USART, Wi-Fi, Bluetooth, ESP-NOW (for ESP boards only))\\
+          - SIM800L Module: Allows the robot to make calls and send messages.\\
+          - MP3 Module: Provides voice comments based on the robot's state for enhanced interaction.}
+          
+          \resumeItem{\textbf{Control and Feedback:}\\
+          Control via a custom app and PS4 controller for manual or autonomous operation.\\
+          Features live-streaming via a 2MP camera for real-time feedback and monitoring.}
+          
+          \resumeItem{\textbf{Custom PCB Design:}\\
+          - The robot includes 2 custom-designed PCB boards for efficient management and integration of all components.}
+          
+          \resumeItem{\textbf{Software Architecture:}\\
+          - Low-Level Control: Handled by ESP32 boards using PlatfromIO IDE (Application layer). *My Contribution*\\
+          - High-Level Control: Managed by Raspberry Pi 4B using the Robot Operating System (ROS).}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Service Towers Distribution - Optimization Problem} $|$ \emph{Jupyter, Python}}{Feb 2023 -- Jun 2023}
+        \resumeItemListStart
+          \resumeItem{aimed to distribute service towers over a defined map, with certain constraints, using Python programming.}
+          \resumeItem{5 optimization techniques were used, Simulated Annealing \textbf{SA}, Genetics Algorithm \textbf{GA}, Particle Swarm Optimization \textbf{PSO}, Ant colony Optimization \textbf{ACO}, Grey Wolf Optimization \textbf{GWO}.}
+        \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{Machine Learning Model} $|$ \emph{Jupyter, Python, OpenCV, TensorFlow}}{Oct 2022 -- Feb 2023}
+        \resumeItemListStart
+          \resumeItem{developed a ML classifier the \textbf{CIFAR100} dataset using the OpenCV library and Python programming:\\
+          Part 1: used \textbf{HOG} as Feature Extraction and (\textbf{KNN}, \textbf{K-means}, and \textbf{SVM}) as [3]Classifiers.\\
+          Part 2: used \textbf{CNN} as Feature Extraction and Classifier.\\
+          Part 3: used \textbf{CNN} as Feature Extraction and Classifier with the pre-trained model \textbf{VGG16} as a base model.}
+        \resumeItemListEnd
+          
+      \resumeProjectHeading
+        {\textbf{Mathematical Optimization Problem} $|$ \emph{Jupyter, Python, NumPy, SymPy, SciPy}}{Oct 2022 -- Feb 2023}
+        \resumeItemListStart
+          \resumeItem{aimed to optimized a complex mathematical equation using Python programming.}
+          \resumeItem{3 optimizations methods were implemented: (Gradient Descent, Newton Raphson, and Steepest Descent).}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+      {\textbf{Furuta Pendulum - Hybrid Control Problem} $|$ \emph{Matlab, Simulink , Arduino}}{Oct 2022 -- Feb 2023}
+      \resumeItemListStart
+        \resumeItem{Aimed to reach stability of the inverted pendlum through the rotation of the system's driven base.}
+        \resumeItem{2 Control techniques were used, linear-Quadratic Regulator Controller \textbf{(LQR)}, Proportional–Integral–Derivative Controller\textbf{(PID)}}
+      \resumeItemListEnd  
+
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/MostafaQusit/CNC-Plotting-Machine}{3-Axis Parallel CNC Plotting Machine}} $|$ \emph{Arduino}}{Mar 2022 -- Jun 2022}
+        \resumeItemListStart
+          \resumeItem{A CNC M/C capable of drawing 2D pictures and writing using a pen (3 DOF).}
+          \resumeItem{Was implemented using 2 different control algorithms: open loop using 2 stepper motors and closed loop using 2 PID-controlled DC motors and 2 encoders for the feedback and servo for Vertical motion(Pen up and down).}
+          \resumeItem{An app was made to provide the CNC with the required text to be written.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/MostafaQusit/RRR-Serial-Robotic-Arm}{RRR Serial Robotic Arm}} $|$ \emph{Arduino}}{April 2022 -- Jun 2022}
+        \resumeItemListStart
+          \resumeItem{An RRR (3 Revolute joint) serial robot capable of drawing numbers.}
+          \resumeItem{Trajectory planning was implemented to achieve concise positioning, and Inverse kinematics were used to get the required angle of each joint.}
+          \resumeItem{3 servo motors were considered as an actuator with a built-in feedback element to optimize the control process.}
+        \resumeItemListEnd
+      
+        \resumeProjectHeading
+        {\textbf{Production Line and Storage Control} $|$ \emph{Factory I/O, TIA Portal}} {Nov. 2021--Dec. 2021}
+        \resumeItemListStart
+          \resumeItem{Designed and Implemented the Ladder Control Diagram of the Automation of the Production Line.}
+        \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+% \pagebreak
+
+%-----------COURSES------------
+\section{Courses \& Trainings}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+    {\textbf{\href{https://training.egyptair.com/crm/Catalog/9300}{Basic complementary Course for A\&C Engineers}} $|$ \emph{EGYPTAIR TRAINING ACADEMY}}{Feb 2025}
+    \resumeItemListStart
+      \resumeItem{Phase (1): Electrical Systems}
+      \resumeItem{Phase (2): Avionics Systems}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{\href{https://training.egyptair.com/crm/Catalog/45100}{Aviation Regulation Course for Engineers}} $|$ \emph{EGYPTAIR TRAINING ACADEMY}}{Jan 2025}
+    \resumeItemListStart
+      \resumeItem{Egyptian Civil Aviation Regulations (ECARs) by Egyptian Civil Aviation Authority (ECAA).}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{AMOS Software training for Scheduling/Planning Engineers} $|$ \emph{EGYPTAIR M\&E}}{Dec 2024 - Present}
+    \resumeItemListStart
+      \resumeItem{Theoretical and Practical training with real-world application at work.}
+    \resumeItemListEnd
+    
+    \resumeProjectHeading
+      {\textbf{\href{https://training.egyptair.com/CRM/Catalog/45200}{Basic Indoctrination for Aero./Mech. Engineers}} $|$ \emph{EGYPTAIR TRAINING ACADEMY}}{Aug 2024 -- Nov 2024}
+      \resumeItemListStart
+        \resumeItem{Phase (1): Inspection Procedures}
+        \resumeItem{Phase (2): Power Sources \& Avionics}
+        \resumeItem{Phase (3): Airframe Systems (I)}
+        \resumeItem{Phase (4): Airframe Systems (II)}
+        \resumeItem{Phase (5): Engine Systems (I)}
+        \resumeItem{Phase (6): Engine Systems (II)}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{\href{https://training.egyptair.com/CRM/Catalog/42400}{Pre Basic for Mechanical Engineers}} $|$ \emph{EGYPTAIR TRAINING ACADEMY}}{July 2024 -- Aug 2024}
+      \resumeItemListStart
+        \resumeItem{Aerodynamics}
+        \resumeItem{Aircraft Performance}
+        \resumeItem{Engine Performance}
+        \resumeItem{Digital Techniques}
+        \resumeItem{Weight and Balance}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{\href{https://training.egyptair.com/CRM/Catalog/55200}{Aircraft Maintenance Planning \& Scheduling For Engineers}} $|$ \emph{AACO Training Center-RTC}}{June 2024}
+    
+    \resumeProjectHeading
+      {\textbf{\href{https://docs.google.com/document/d/1X7FlRX-Re-GHMI3wuXc9e37jJEGl_DlxNb-6NCMlmgo/edit?usp=sharing}{Embedded Systems}} $|$ \emph{Eng. Ahmed Abd El-Ghafar}}{July 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{C Programming, Data Structure and algorithms.}
+        \resumeItem{Microcontroller Interfacing.}
+        \resumeItem{Automotive Protocols (CAN, LIN), AUTOSAR and MISRA C.}
+        \resumeItem{Automotive, Bootloader and ARM Cortex M4 Architecture.}
+        \resumeItem{Real Time Operating System (RTOS)}
+      \resumeItemListEnd
+    
+    \resumeProjectHeading
+      {\textbf{E-Waste Refurbishment Curriculum Train-OF-Trainers} $|$ \emph{Electronics Research Institute}}{Feb 2024}
+
+    \resumeProjectHeading
+      {\textbf{Competency-based learning Training} $|$ \emph{Ministry of Education and Technical Education}}{Dec 2023}
+
+    \resumeProjectHeading
+      {\textbf{Full-Stack for beginners} $|$ \emph{NASS Academy - WE School}}{Sep 2023}
+      \resumeItemListStart
+        \resumeItem{Front-End: HTML, CSS/Bootstrap, JavaScript/React.}
+        \resumeItem{Back-End: Node.js, Express.js, MySQL.}
+      \resumeItemListEnd
+    
+    \resumeProjectHeading
+      {\textbf{\href{https://www.coursera.org/projects/create-financial-statement-using-microsoft-excel}{Create a Financial Statement using Microsoft Excel}} $|$ \emph{Coursera}}{Sep 2023}
+
+    \resumeProjectHeading
+      {\textbf{\href{https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted}{MATLAB Onramp}} $|$ \emph{MathWorks}}{Oct 2022}
+    
+    \resumeProjectHeading
+      {\textbf{\href{https://matlabacademy.mathworks.com/details/simulink-onramp/simulink}{Simulink Onramp}} $|$ \emph{MathWorks}}{Oct 2022}
+
+    \resumeProjectHeading
+      {\textbf{\href{https://drive.google.com/drive/folders/1gKIz-PYpO2zrjnvkzoYVhijYoGJP7P9j?usp=sharing}{Basic programming and operating CNC Milling centers using Fanuc Oi}} $|$ \emph{AOI Academy}}{Oct 2021}
+      \resumeItemListStart
+        \resumeItem{learn G-code \& M-code programming.}
+        \resumeItem{program simple contour milling and drilling cycles.}
+        \resumeSubItem{program, operate and set up 3-axis CNC Milling M/C using Fanuc Oi.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Fundamental Embedded Systems} $|$ \emph{Eng. Hussien Hossam}}{Feb 2021 -- Sep 2021}
+      \resumeItemListStart
+        \resumeItem{C Programming Language, Data Structure Algorithms.}
+        \resumeItem{Embedded Systems by AVR Microcontrollers.}
+      \resumeItemListEnd
+  
+    \resumeProjectHeading
+      {\textbf{Building Arduino robots and devices} $|$ \emph{Coursera}}{Sep 2020}
+      
+    \resumeProjectHeading
+      {\textbf{Introduction to Programming with MATLAB (level 1/3)} $|$ \emph{Coursera}}{Sep 2020}
+    
+    \resumeProjectHeading
+      {\textbf{Getting Started with Python (Level 1/5)} $|$ \emph{Coursera}}{Sep 2020}  
+    
+    \resumeProjectHeading
+      {\textbf{Supply Chain} $|$ \emph{IDT Student Activity}}{April 2020}
+      \resumeItemListStart[label={}]
+        \resumeItem{Lean Manufacturing, 6-sigma, Quality, etc...}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+  \resumeItemListStart
+    \resumeItem{\textbf{Computer Applications:} \\
+        - MS Office (Excel, PowerPoint, Word) \\
+        - Aviation Maintenance \& Operational Systems (AMOS)}
+    \resumeItem{\textbf{Mechanical Design:} SOLIDWORKS, Inventor, AutoCAD}
+    \resumeItem{\textbf{Languages:} Arabic (Native), English (Professional)}
+    
+    \resumeItem{
+      \textbf{Programming:} \\
+        \textbf{- Languages:} Python, C/C++, SQL (MySQL), JavaScript, HTML/CSS, MATLAB/Simulink, G-Code \\
+        \textbf{- Frameworks:} Arduino, Bootstrap, React, Node.js, Express \\
+        \textbf{- Tools:} Git, GitHub, VS Code, PyCharm, IAR, Microchip/Atmel, PlatfromIO IDE, Jupyter, Arduino IDE \\
+        \textbf{- Boards:} AVR, ESP32, STM32, ARM Cortex M4 \\
+        \textbf{- Libraries:} Python(NumPy, SymPy, SciPy, Pandas, Matplotlib, OpenCV, TensorFlow)
+    }
+    \resumeItem{
+      \textbf{Soft Skills:} Teamwork, Communication, Problem Solving, Time Management, Adaptability, Public Speaking.
+    }
+  \resumeItemListEnd
+
+
+%-------------------------------------------
+\end{document}
