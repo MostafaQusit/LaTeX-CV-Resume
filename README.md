@@ -64,7 +64,6 @@ Add this to preamble (replace `PrimaryColor`):
 \definecolor{PrimaryColor}{RGB}{0, 102, 204}
 ```
 
-
 ### Add Section
 
 Use existing section templates:
